@@ -14,6 +14,10 @@ https://drive.google.com/file/d/1npk7xz_COQMbw-dO9VYJG9yuZEG8RswV/view?usp=shari
 
 **Intro**
 
+A interactive profile page with the ability to change the profile text, post a message, and like a post.
+
+Made using Css and Html.
+
 This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.
 
 **Figma**
