@@ -56,6 +56,7 @@
   padding: 0;
   cursor: pointer;
   gap: 8px;
+  display: block;
   margin-top: auto;
   padding: 0 8px 0 0;
 }
@@ -122,6 +123,6 @@
     margin: 0;
   }
   .profile__edit-button {
-    margin: 0;
+    margin: auto;
   }
 }
