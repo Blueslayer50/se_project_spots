@@ -56,6 +56,7 @@
   cursor: pointer;
   gap: 8px;
   margin-top: auto;
+  justify-items: center;
 }
 
 .profile__edit-button:hover {
@@ -113,10 +114,6 @@
   .profile__description {
     margin: 0 0 20px;
     max-width: 288px;
-  }
-
-  .profile__button {
-    margin: 0 auto;
   }
 
   .profile__column {

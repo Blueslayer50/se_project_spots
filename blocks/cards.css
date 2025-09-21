@@ -58,10 +58,6 @@
     margin: 0;
   }
 
-  .cards {
-    border-width: 288px;
-  }
-
   .card__title {
     font-size: 16px;
     max-width: 288px;
@@ -74,5 +70,7 @@
 
   .cards__list {
     grid-template-columns: repeat(auto-fit, 288px);
+    padding: 0;
+    gap: 20px;
   }
 }
