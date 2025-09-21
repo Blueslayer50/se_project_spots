@@ -56,15 +56,12 @@
   cursor: pointer;
   gap: 8px;
   margin-top: auto;
-  justify-items: center;
+  justify-content: center;
+  padding: 0 8px 0 0;
 }
 
 .profile__edit-button:hover {
   color: rgba(33, 33, 33, 1);
-}
-
-.profile__edit-button {
-  padding: 0 8px 0 0;
 }
 
 .profile__add-button {
