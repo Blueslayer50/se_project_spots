@@ -126,5 +126,6 @@
   }
   .profile__edit-button {
     margin: 0;
+    justify-items: center;
   }
 }
