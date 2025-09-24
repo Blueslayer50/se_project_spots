@@ -2,7 +2,6 @@
   display: flex;
   padding: 35px 0 20px;
   border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
-  margin: 0 auto;
 }
 
 .profile__avatar {
@@ -15,7 +14,7 @@
 .profile__column {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .profile__name {
@@ -53,7 +52,6 @@
   opacity: 70%;
   border: none;
   max-width: 107px;
-  padding: 0;
   cursor: pointer;
   gap: 8px;
   display: block;
@@ -124,5 +122,6 @@
   }
   .profile__edit-button {
     margin: 0 auto;
+    gap: 20 auto 20 auto;
   }
 }
