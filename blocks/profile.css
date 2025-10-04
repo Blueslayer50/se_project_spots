@@ -52,10 +52,9 @@
   background-color: transparent;
   opacity: 70%;
   border: none;
-  max-width: 107px;
   cursor: pointer;
   gap: 8px;
-  display: block;
+  display: flex;
   margin-top: auto;
   padding: 0 8px 0 0;
 }

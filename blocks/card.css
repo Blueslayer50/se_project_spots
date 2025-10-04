@@ -1,11 +1,10 @@
-
 .card {
-  position: relative;
+  display: flex;
+  flex-direction: column;
   gap: 12px;
 }
 
 .card__image {
-  width: 100%;
   border-radius: 8px;
   object-fit: cover;
   display: block;
@@ -21,7 +20,7 @@
 
 .card__title {
   max-width: 353px;
-  margin: 12px 0 0;
+  margin: 0;
   font-weight: 500;
   font-size: 20px;
   text-overflow: ellipsis;
@@ -32,11 +31,15 @@
 .card__like-button {
   border: none;
   background-color: transparent;
+  cursor: pointer;
   width: 23px;
   height: 20px;
   opacity: 40%;
   background-image: url(../images/like.svg);
-  margin: 12px 0 0;
+}
+
+.card__like-button:hover {
+  opacity: 1;
 }
 
 @media screen and (max-width: 627px) {
