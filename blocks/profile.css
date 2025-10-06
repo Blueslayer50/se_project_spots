@@ -15,7 +15,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 20px;
 }
 
 .profile__name {
@@ -57,10 +56,11 @@
   display: flex;
   margin-top: auto;
   padding: 0 8px 0 0;
+  color: #212121;
 }
 
 .profile__edit-button:hover {
-  color: rgba(33, 33, 33, 1);
+  opacity: 100%;
 }
 
 .profile__add-button {
