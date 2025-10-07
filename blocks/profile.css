@@ -93,6 +93,7 @@
     align-items: center;
     text-align: center;
     padding-top: 20px;
+    margin: 0 auto 0 auto;
   }
 
   .profile__avatar {
