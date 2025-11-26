@@ -41,6 +41,7 @@
 
 .modal__close-btn:hover {
   opacity: 2;
+  cursor: pointer;
 }
 
 .modal__title {
