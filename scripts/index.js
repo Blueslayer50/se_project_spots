@@ -44,8 +44,8 @@ newPostCloseBtn.addEventListener("click", function () {
 
 function handleProfileFormSubmit(evt) {
   evt.preventDefault();
-  profileName.textContent = newProfileNameInput.value;
-  profileDescription.textContent = newProfileDescriptionInput.value;
+  profileName.textContent = editProfileNameInput.value;
+  profileDescription.textContent = editProfileDescriptionInput.value;
 }
 
 newCardForm.addEventListener("submit", handleProfileFormSubmit);
