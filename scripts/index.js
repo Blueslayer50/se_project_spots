@@ -48,7 +48,7 @@ function handleProfileFormSubmit(evt) {
   profileDescription.textContent = editProfileDescriptionInput.value;
 }
 
-newCardForm.addEventListener("submit", handleProfileFormSubmit);
+editProfileForm.addEventListener("submit", handleProfileFormSubmit);
 
 function handleCardFormSubmit(evt) {
   evt.preventDefault();
