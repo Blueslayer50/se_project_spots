@@ -21,15 +21,13 @@ const newCardDescriptionInput = newPostModal.querySelector(
 
 const profileName = document.querySelector(".profile__name");
 const profileDescription = document.querySelector(".profile__description");
-const cardImage = document.querySelector(".card__image");
-const cardTitle = document.querySelector(".card__title");
 
 function openModal(modal) {
-  modal.classList.add("modal__is-opened");
+  modal.classList.add("modal_is-opened");
 }
 
 function closeModal(modal) {
-  modal.classList.remove("modal__is-opened");
+  modal.classList.remove("modal_is-opened");
 }
 
 editProfileBtn.addEventListener("click", function () {
