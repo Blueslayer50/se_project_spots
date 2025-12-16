@@ -112,7 +112,8 @@
   }
 
   .modal__close-btn {
-    padding: 22px 12px;
+    top: 5px;
+    right: 12px;
   }
 
   .modal__submit-btn {
