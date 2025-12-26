@@ -1,6 +1,7 @@
 .modal {
   opacity: 0;
   visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s;
   background-color: #00000080;
   position: fixed;
   top: 0;
@@ -20,6 +21,7 @@
 .modal_is-opened {
   visibility: visible;
   opacity: 1;
+  transition-delay: 0s, 0s;
 }
 
 .modal__container {
@@ -52,9 +54,12 @@
 .modal__close-btn_type_preview {
   top: 0;
   right: -52.5px;
-  background: url("../images/close_white.svg") no-repeat center;
+  background: url("../images/close.jpg") no-repeat center;
   background-size: 24px 24px;
   background-color: transparent;
+  width: 40px;
+  height: 40px;
+  border: none;
 }
 
 .modal__close-btn_type_preview:hover {
@@ -105,7 +110,12 @@
 }
 
 .modal__image {
-  max-width: unset;
+  max-width: 80vw;
+  max-height: 80vh;
+  width: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: 8px;
 }
 
 .modal__submit-btn {
@@ -128,8 +138,17 @@
     padding: 22px 12px 12px;
   }
 
+  .modal__image {
+    max-width: unset;
+  }
+
   .modal__container {
     padding: 12px;
+  }
+
+  .modal__close-btn_type_preview {
+    top: -48px;
+    right: 0;
   }
 
   .modal__close-btn {
@@ -142,8 +161,9 @@
     width: 100%;
   }
   .modal__input {
-    max-width: none;
     width: 100%;
+    padding: 18px 32px;
+    font-size: 16px;
   }
   .modal__title {
     font-size: 20px;
