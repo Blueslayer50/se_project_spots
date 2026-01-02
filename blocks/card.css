@@ -16,14 +16,6 @@
   cursor: pointer;
 }
 
-.card__image:hover {
-  opacity: 0.95;
-}
-
-.card__image:focus-visible {
-  box-shadow: 0 0 0 3px rgba(0, 123, 244, 0.5);
-}
-
 .card__content {
   display: flex;
   justify-content: space-between;
@@ -40,7 +32,7 @@
   overflow: hidden;
 }
 
-.card__like-button {
+.card__like-btn {
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -52,18 +44,14 @@
   background-size: contain;
 }
 
-.card__like-button:hover {
+.card__like-btn:hover {
   opacity: 1;
 }
 
-.card__like-button_active {
+.card__like-btn_active {
   background: url(../images/like_active.svg) no-repeat center;
   opacity: 1;
   background-repeat: no-repeat;
-}
-
-.card__like-btn_active:hover {
-  opacity: 0.4;
 }
 
 .card__delete-btn {

@@ -42,6 +42,7 @@
   height: 40px;
   border: none;
   background-color: #fff;
+  background: url(../images/close.jpg) no-repeat center;
   cursor: pointer;
   opacity: 0.4;
   transition: opacity 0.2s ease;
@@ -54,12 +55,15 @@
 .modal__close-btn_type_preview {
   top: 0;
   right: -52.5px;
-  background: url("../images/close.jpg") no-repeat center;
+  background-image: url("../images/close.jpg") no-repeat center;
   background-size: 24px 24px;
   background-color: transparent;
   width: 40px;
   height: 40px;
   border: none;
+  position: absolute;
+  opacity: 0.4;
+  cursor: pointer;
 }
 
 .modal__close-btn_type_preview:hover {
@@ -118,6 +122,10 @@
   border-radius: 8px;
 }
 
+.modal__image-container {
+  position: relative;
+}
+
 .modal__submit-btn {
   max-width: 156px;
   background-color: #212121;
@@ -146,14 +154,14 @@
     padding: 12px;
   }
 
-  .modal__close-btn_type_preview {
-    top: -48px;
-    right: 0;
-  }
-
   .modal__close-btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
     top: 5px;
     right: 12px;
+    border: 0;
+    opacity: 1;
   }
 
   .modal__submit-btn {
