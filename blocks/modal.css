@@ -42,7 +42,7 @@
   height: 40px;
   border: none;
   background-color: #fff;
-  background: url(../images/close.jpg) no-repeat center;
+  background: url(../images/close.svg) no-repeat center;
   cursor: pointer;
   opacity: 0.4;
   transition: opacity 0.2s ease;
@@ -55,7 +55,7 @@
 .modal__close-btn_type_preview {
   top: 0;
   right: -52.5px;
-  background-image: url("../images/close.jpg") no-repeat center;
+  background-image: url("../images/close.svg") no-repeat center;
   background-size: 24px 24px;
   background-color: transparent;
   width: 40px;
@@ -96,6 +96,8 @@
   max-width: 630px;
   width: 100%;
   padding: 16px 12px;
+  border-width: 1px;
+  border-style: solid;
   border-radius: 8px;
   border-color: #21212166;
   font-size: 20px;
@@ -124,6 +126,9 @@
 
 .modal__image-container {
   position: relative;
+}
+
+.modal__caption {
 }
 
 .modal__submit-btn {
@@ -181,5 +186,10 @@
   }
   .modal__input::placeholder {
     font-size: 16px;
+  }
+
+  .modal__close-btn_type_preview {
+    top: -48px;
+    right: 0;
   }
 }
