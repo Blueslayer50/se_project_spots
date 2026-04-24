@@ -9,38 +9,51 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>Spots</title>
   </head>
+
   <body>
     <div class="page">
+      <!-- HEADER -->
       <header class="header">
         <img
-          src="<%=require('./images/logo.svg')%>"
+          src="<%= require('./images/logo.svg') %>"
           alt="Spots"
           class="header__logo"
         />
       </header>
+
+      <!-- MAIN CONTENT -->
       <main class="content">
+        <!-- PROFILE SECTION -->
         <section class="profile">
-          <img
-            src="<%=require('./images/avatar.jpg')%>"
-            alt="Bessie Coleman"
-            class="profile__avatar"
-          />
+          <div class="profile__avatar-container">
+            <img
+              src="<%= require('./images/avatar.jpg') %>"
+              alt="Profile avatar"
+              class="profile__avatar"
+            />
+            <button class="profile__avatar-button" type="button"></button>
+          </div>
+
           <div class="profile__column">
             <h1 class="profile__name">Bessie Coleman</h1>
             <p class="profile__description">Civil Aviator</p>
+
             <button class="profile__edit-button" type="button">
               <img
-                src="<%=require('./images/edit.svg')%>"
-                alt="Edit button"
-                class="profile__edit"
-              />Edit Profile
+                src="<%= require('./images/edit.svg') %>"
+                alt="Edit profile"
+              />
+              Edit Profile
             </button>
           </div>
+
           <button class="profile__add-button" type="button">
-            <img src="<%=require('./images/plus.svg')%>" alt="New Post" />New
-            Post
+            <img src="<%= require('./images/plus.svg') %>" alt="New Post" />
+            New Post
           </button>
         </section>
+
+        <!-- CARDS SECTION -->
         <section class="cards">
           <ul class="cards__list">
             <template id="card-template">
@@ -56,14 +69,21 @@
           </ul>
         </section>
       </main>
-      <footer class="footer"><p class="footer__content">2025© Spots</p></footer>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <p class="footer__content">2025© Spots</p>
+      </footer>
+
+      <!-- EDIT PROFILE MODAL -->
       <div class="modal" id="edit-profile-modal">
         <div class="modal__container">
           <button type="button" class="modal__close-btn"></button>
           <h2 class="modal__title">Edit profile</h2>
+
           <form class="modal__form" id="profile-form">
-            <label for="profile-name-input" class="modal__label"
-              >Name
+            <label class="modal__label">
+              Name
               <input
                 id="profile-name-input"
                 type="text"
@@ -75,8 +95,9 @@
               />
               <span class="modal__error" id="profile-name-input-error"></span>
             </label>
-            <label for="profile-description-input" class="modal__label"
-              >Description
+
+            <label class="modal__label">
+              Description
               <input
                 id="profile-description-input"
                 type="text"
@@ -91,21 +112,21 @@
                 id="profile-description-input-error"
               ></span>
             </label>
+
             <button type="submit" class="modal__submit-btn">Save</button>
           </form>
         </div>
       </div>
+
+      <!-- NEW POST MODAL -->
       <div class="modal" id="new-post-modal">
         <div class="modal__container">
-          <button
-            type="button"
-            class="modal__close-btn"
-            aria-label="Close modal"
-          ></button>
+          <button type="button" class="modal__close-btn"></button>
           <h2 class="modal__title">New post</h2>
+
           <form class="modal__form" id="new-post-form">
-            <label for="card-image-input" class="modal__label"
-              >Image link
+            <label class="modal__label">
+              Image link
               <input
                 id="card-image-input"
                 type="url"
@@ -115,8 +136,9 @@
               />
               <span class="modal__error" id="card-image-input-error"></span>
             </label>
-            <label for="card-description-input" class="modal__label"
-              >Caption
+
+            <label class="modal__label">
+              Caption
               <input
                 id="card-description-input"
                 type="text"
@@ -130,10 +152,13 @@
                 id="card-description-input-error"
               ></span>
             </label>
+
             <button type="submit" class="modal__submit-btn">Save</button>
           </form>
         </div>
       </div>
+
+      <!-- PREVIEW MODAL -->
       <div class="modal modal_type_preview" id="preview-modal">
         <div class="modal__image-container">
           <button
