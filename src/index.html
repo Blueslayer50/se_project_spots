@@ -6,7 +6,6 @@
     <meta name="description" content="Achieve Greatness" />
     <meta name="author" content="Manvir Sidhu" />
     <meta name="keywords" content="HTML, CSS, Image Sharing" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>Spots</title>
   </head>
 
@@ -140,21 +139,56 @@
             <label class="modal__label">
               Caption
               <input
-                id="card-description-input"
+                id="caption-input"
                 type="text"
                 class="modal__input"
                 placeholder="Type your caption"
                 minlength="2"
                 maxlength="30"
+                required
               />
-              <span
-                class="modal__error"
-                id="card-description-input-error"
-              ></span>
+              <span class="modal__error" id="caption-input-error"></span>
             </label>
 
             <button type="submit" class="modal__submit-btn">Save</button>
           </form>
+        </div>
+      </div>
+
+      <!-- AVATAR MODAL -->
+      <div class="modal" id="avatar-modal">
+        <div class="modal__container">
+          <button type="button" class="modal__close-btn"></button>
+          <h2 class="modal__title">Edit avatar</h2>
+
+          <form class="modal__form" id="avatar-form">
+            <label class="modal__label">
+              Avatar link
+              <input
+                id="profile-avatar-input"
+                type="url"
+                class="modal__input"
+                placeholder="Paste a link to your new avatar"
+                required
+              />
+              <span class="modal__error" id="profile-avatar-input-error"></span>
+            </label>
+
+            <button type="submit" class="modal__submit-btn">Save</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- DELETE MODAL -->
+      <div class="modal" id="delete-modal">
+        <div class="modal__container">
+          <button type="button" class="modal__close-btn"></button>
+          <h2 class="modal__title">Are you sure?</h2>
+
+          <div class="modal__button__container">
+            <button class="modal__delete-button" type="button">Delete</button>
+            <button class="modal__cancel-button" type="button">Cancel</button>
+          </div>
         </div>
       </div>
 

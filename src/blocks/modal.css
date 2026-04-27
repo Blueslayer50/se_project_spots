@@ -1,5 +1,3 @@
-/* ---------------- BASE MODAL ---------------- */
-
 .modal {
   position: fixed;
   inset: 0;
@@ -8,13 +6,11 @@
   align-items: center;
   padding: 10px;
   background-color: rgba(33, 33, 33, 0.5);
-
   opacity: 0;
   visibility: hidden;
   transition:
     opacity 0.3s ease-in-out,
     visibility 0.3s ease-in-out;
-
   z-index: 1000;
 }
 
@@ -22,8 +18,6 @@
   opacity: 1;
   visibility: visible;
 }
-
-/* ---------------- MODAL CONTAINER ---------------- */
 
 .modal__container {
   background-color: #fff;
@@ -34,8 +28,6 @@
   position: relative;
   box-sizing: border-box;
 }
-
-/* ---------------- CLOSE BUTTON ---------------- */
 
 .modal__close-btn {
   position: absolute;
@@ -55,7 +47,6 @@
   opacity: 1;
 }
 
-/* Preview modal close button */
 .modal__close-btn_type_preview {
   top: 0;
   right: -52px;
@@ -63,14 +54,11 @@
   opacity: 1;
 }
 
-/* Delete modal close button */
 .modal__close-btn_type_delete {
   top: 0;
   right: -52px;
   background: none;
 }
-
-/* ---------------- TITLES & LABELS ---------------- */
 
 .modal__title {
   margin: 0 0 32px;
@@ -88,8 +76,6 @@
   font-weight: 500;
   font-family: Poppins, Arial, Helvetica, sans-serif;
 }
-
-/* ---------------- INPUTS ---------------- */
 
 .modal__input {
   width: 100%;
@@ -115,8 +101,6 @@
   border-color: rgba(255, 0, 0, 0.6);
 }
 
-/* ---------------- ERRORS ---------------- */
-
 .modal__error {
   visibility: hidden;
   opacity: 0;
@@ -131,8 +115,6 @@
   visibility: visible;
   opacity: 1;
 }
-
-/* ---------------- SUBMIT BUTTON ---------------- */
 
 .modal__submit-btn {
   max-width: 156px;
@@ -157,8 +139,6 @@
   opacity: 0.5;
   cursor: not-allowed;
 }
-
-/* ---------------- DELETE MODAL BUTTONS ---------------- */
 
 .modal__button__container {
   display: flex;
@@ -200,8 +180,6 @@
   border-color: #212121;
 }
 
-/* ---------------- PREVIEW MODAL ---------------- */
-
 .modal_type_preview {
   padding: 0 16px;
 }
@@ -228,8 +206,6 @@
   border-radius: 8px;
   display: inline-block;
 }
-
-/* ---------------- RESPONSIVE ---------------- */
 
 @media screen and (max-width: 630px) {
   .modal__container {

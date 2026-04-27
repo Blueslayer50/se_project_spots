@@ -1,13 +1,9 @@
-/* ---------------- PROFILE WRAPPER ---------------- */
-
 .profile {
   display: flex;
   padding: 34px 0 20px;
   border-bottom: 1px solid rgba(33, 33, 33, 0.4);
   align-items: flex-start;
 }
-
-/* ---------------- AVATAR + EDIT OVERLAY ---------------- */
 
 .profile__avatar-container {
   position: relative;
@@ -49,8 +45,6 @@
   content: "Edit Avatar";
 }
 
-/* ---------------- TEXT COLUMN ---------------- */
-
 .profile__column {
   display: flex;
   flex-direction: column;
@@ -84,8 +78,6 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
-/* ---------------- BUTTONS ---------------- */
 
 .profile__edit-button {
   margin-top: auto;
@@ -126,8 +118,6 @@
 .profile__add-button:hover {
   background-color: rgba(33, 33, 33, 0.8);
 }
-
-/* ---------------- MOBILE ---------------- */
 
 @media screen and (max-width: 630px) {
   .profile {
