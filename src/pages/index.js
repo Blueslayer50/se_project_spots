@@ -214,13 +214,18 @@ avatarForm.addEventListener("submit", (evt) =>
 );
 
 deleteConfirmButton.addEventListener("click", () => {
+  deleteConfirmButton.textContent = "Deleting...";
+
   api
     .removeCard(selectedCardId)
     .then(() => {
       selectedCard.remove();
       closeModal(deleteModal);
     })
-    .catch(console.error);
+    .catch(console.error)
+    .finally(() => {
+      deleteConfirmButton.textContent = "Delete";
+    });
 });
 
 deleteCancelButton.addEventListener("click", () => closeModal(deleteModal));
