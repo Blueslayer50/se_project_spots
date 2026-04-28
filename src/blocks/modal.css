@@ -1,0 +1,270 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(33, 33, 33, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s ease-in-out,
+    visibility 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.modal_is-opened {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__container {
+  background-color: #fff;
+  max-width: 630px;
+  width: 100%;
+  padding: 32px 50px;
+  border-radius: 8px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 32px;
+  right: 50px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: url("../images/close_black.svg") no-repeat center;
+  background-color: transparent;
+  opacity: 0.4;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.modal__close-btn:hover {
+  opacity: 1;
+}
+
+.modal__close-btn_type_preview {
+  top: 0;
+  right: -52px;
+  background: url("../images/close.svg") no-repeat center;
+  opacity: 1;
+}
+
+.modal__title {
+  margin: 0 0 32px;
+  font-size: 32px;
+  font-weight: 500;
+  color: #212121;
+  line-height: 1;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+.modal__label {
+  display: block;
+  margin: 0 0 32px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+.modal__input {
+  width: 100%;
+  margin-top: 8px;
+  padding: 16px 12px;
+  font-size: 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(33, 33, 33, 0.4);
+  box-sizing: border-box;
+}
+
+.modal__input:hover {
+  border-color: rgba(33, 33, 33, 0.6);
+}
+
+.modal__input::placeholder {
+  color: #2121214d;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.modal__input_type_error {
+  border-color: rgba(255, 0, 0, 0.6);
+}
+
+.modal__error {
+  visibility: hidden;
+  opacity: 0;
+  color: #ff0000;
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.modal__error_visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__submit-btn {
+  max-width: 156px;
+  width: 100%;
+  height: 52px;
+  padding: 18px 32px;
+  border: none;
+  border-radius: 8px;
+  background-color: #212121;
+  color: #fcf5e5;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.modal__submit-btn:hover {
+  opacity: 0.8;
+}
+
+.modal__submit-btn_inactive {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.modal__button__container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.modal__delete-button {
+  width: 156px;
+  height: 52px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff6565;
+  color: #212121;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.modal__delete-button:hover {
+  background-color: #ff3333;
+}
+
+.modal__cancel-button {
+  width: 156px;
+  height: 52px;
+  border-radius: 8px;
+  border: 2px solid rgba(33, 33, 33, 0.4);
+  background-color: #fff;
+  color: #212121;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.modal__cancel-button:hover {
+  background-color: #212121;
+  color: #fff;
+  border-color: #212121;
+}
+
+.modal_type_preview {
+  padding: 0 16px;
+}
+
+.modal__image-container {
+  position: relative;
+}
+
+.modal__image {
+  max-width: 80vw;
+  max-height: 80vh;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.modal__caption {
+  margin-top: 8px;
+  padding: 4px 8px;
+  background-color: #212121;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 8px;
+  display: block;
+  text-align: center;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 630px) {
+  .modal__container {
+    padding: 22px 12px 12px;
+  }
+
+  .modal__close-btn {
+    top: 12px;
+    right: 12px;
+  }
+
+  .modal__close-btn_type_preview {
+    top: -45px;
+    right: 0;
+  }
+
+  .modal__title {
+    font-size: 20px;
+  }
+
+  .modal__input {
+    font-size: 16px;
+    padding: 18px 32px;
+  }
+
+  .modal__input::placeholder {
+    font-size: 16px;
+  }
+
+  .modal__caption {
+    font-size: 16px;
+  }
+
+  .modal__button__container {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .modal__container {
+    width: 95%;
+    padding: 32px 20px;
+  }
+
+  .modal__form {
+    max-width: 276px;
+  }
+
+  .modal__submit-btn {
+    width: 100%;
+    max-width: none;
+  }
+
+  .modal__button__container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .modal__delete-button,
+  .modal__cancel-button {
+    width: 100%;
+  }
+}
