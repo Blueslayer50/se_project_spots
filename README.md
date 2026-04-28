@@ -23,4 +23,6 @@ Good luck and have fun!
 
 Github Pages https://blueslayer50.github.io/se_project_spots/
 
-Video https://drive.google.com/file/d/1npk7xz_COQMbw-dO9VYJG9yuZEG8RswV/view?usp=sharing
+Initial Video https://drive.google.com/file/d/1npk7xz_COQMbw-dO9VYJG9yuZEG8RswV/view?usp=sharing
+
+Final Video https://drive.google.com/file/d/1m_Yw2kTqWaBY26T0aCByZciCvX9mT11L/view?usp=sharing
