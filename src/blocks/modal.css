@@ -204,7 +204,9 @@
   font-size: 20px;
   font-weight: 500;
   border-radius: 8px;
-  display: inline-block;
+  display: block;
+  text-align: center;
+  width: 100%;
 }
 
 @media screen and (max-width: 630px) {
@@ -249,11 +251,7 @@
 @media screen and (max-width: 320px) {
   .modal__container {
     padding: 32px 20px;
-  }
-
-  .modal__close-btn {
-    top: 22px;
-    right: 12px;
+    width: 90%;
   }
 
   .modal__form {
@@ -261,6 +259,16 @@
   }
 
   .modal__submit-btn {
+    width: 100%;
+  }
+
+  .modal__button__container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .modal__delete-button,
+  .modal__cancel-button {
     width: 100%;
   }
 }
